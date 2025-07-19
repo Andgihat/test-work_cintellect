@@ -13,13 +13,112 @@ code {
 }
 
 
- .ti-root { display:flex; align-items:stretch; gap:4px; margin:4px 0; }
- .ti-buttons { display:flex; gap:4px; }
- .ti-input { flex:1; padding:4px 8px; border:1px solid #ccc; border-radius:4px; }
- .ti-btn { padding:4px 8px; border:1px solid #aaa; background:#f6f6f6; cursor:pointer; border-radius:4px; }
- .ti-btn:hover:not(:disabled){ background:#e9e9e9; }
- .ti-btn:disabled { opacity:0.5; cursor:default; }
- .ti-btn.ti-primary { border-color:#2563eb; background:#3b82f6; color:#fff; }
- .ti-btn.ti-primary:hover:not(:disabled){ background:#2563eb; }
- .ti-btn.ti-danger { border-color:#dc2626; background:#ef4444; color:#fff; }
- .ti-btn.ti-danger:hover:not(:disabled){ background:#dc2626; }
+ .ti-root { 
+    display:flex; 
+    align-items:stretch; 
+    gap:4px; 
+    margin:4px 0; 
+  }
+
+ .ti-buttons { 
+    display:flex; 
+    gap:4px; 
+  }
+
+ .ti-input { 
+    flex:1; 
+    padding:4px 8px; 
+    border:1px solid #ccc; 
+    border-radius:4px; 
+  }
+
+ .ti-btn { 
+    padding:4px 8px; 
+    border:1px solid #aaa; 
+    background:#f6f6f6; 
+    cursor:pointer; 
+    border-radius:4px; 
+  }
+  
+ .ti-btn:hover:not(:disabled) { 
+    background:#e9e9e9; 
+  }
+
+ .ti-btn:disabled { 
+    opacity:0.5; 
+    cursor:default; 
+  }
+
+ .ti-btn.ti-primary { 
+    border-color:#2563eb; 
+    background:#3b82f6; 
+    color:#fff; 
+  }
+
+ .ti-btn.ti-primary:hover:not(:disabled){ 
+    background:#2563eb; 
+  }
+
+ .ti-btn.ti-danger { 
+    border-color:#dc2626; 
+    background:#ef4444; 
+    color:#fff; 
+  }
+
+ .ti-btn.ti-danger:hover:not(:disabled){ 
+    background:#dc2626; 
+  }
+
+
+ .ac-root { 
+    position:relative; 
+ }
+
+ .ac-list { 
+    position:absolute; 
+    left:0; 
+    right:0; 
+    margin:2px 0 0; 
+    padding:4px 0; 
+    list-style:none; 
+    background:#fff; 
+    border:1px solid #ccc; 
+    border-radius:4px; 
+    max-height:240px; 
+    overflow:auto; 
+    z-index:10; 
+}
+
+ .ac-item { 
+    display:flex; 
+    gap:8px; 
+    padding:4px 8px; 
+    cursor:pointer; 
+    align-items:center; 
+  }
+
+ .ac-item:hover { 
+    background:#f1f5f9; 
+  }
+
+ .ac-flag img { 
+    width:24px; 
+    height:16px; 
+    object-fit:cover; 
+    border:1px solid #ddd; 
+  }
+
+ .ac-names { 
+    display:flex; 
+    flex-direction:column; 
+    font-size:12px; 
+  }
+
+ .ac-common { 
+    font-weight:600; 
+    font-size:13px; 
+  }
+
+ .ac-official { 
+    opacity:0.7; 
+  }
